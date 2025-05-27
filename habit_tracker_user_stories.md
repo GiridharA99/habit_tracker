@@ -38,9 +38,9 @@ _As a user, I want to see a section for completed habits on the homepage, so tha
 
 **Acceptance Criteria:**
 
-1. A user is shown a personalized welcome message with their name on the homepage.
-2. A user is able to see their daily progress for each habit on the homepage.
-3. A user is able to see a section that shows the completed habits on the homepage.
+1. The user is shown a personalized welcome message with their name on the homepage.
+2. The user is able to see their daily progress for each habit on the homepage.
+3. The user is able to see a section that shows the completed habits on the homepage.
    
 
 **Priority:** High
