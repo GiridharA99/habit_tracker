@@ -18,7 +18,7 @@ _As an exisitng user, I want to receive a message if I enter the wrong username 
 3. An exisitng user if provided the incorrect user name and password is shown the appropriate error message.
    
 
-**Priority:** High
+**Priority:** Medium
 
 **Story Points:** 3
 
@@ -45,7 +45,7 @@ _As a user, I want to see a section for completed habits on the homepage, so tha
 
 **Priority:** High
 
-**Story Points:** 3
+**Story Points:** 8
 
 **Notes:**
 - The user is shown completed tasks only if they were previously completed by the user.
