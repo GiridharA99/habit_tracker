@@ -103,7 +103,7 @@ _As a user, I want my updated name to be displayed in the app's header after I c
 
 **Story Points:** 4/10
 
-  ## 5. Habits Page
+  ## 5. Details Screen
 
 1. **Add a new habit:**
 _As a user, I want to add new habits on the details configuration page so that I can manage and update my habits as needed._
@@ -171,5 +171,28 @@ _As a user, I want to have the option to receive notifications three times a day
 **Priority:** Low
 
 **Story Points:** 3/10
+
+## 8. Persistant Data
+
+1. **Save Habits to Storage:**
+_As a user, I want to be able to save habits to local storage so that the habit is available when I login again._
+
+2. **Save Login Information:**
+_As a user, I want to save login information to storage so that the next time I do not require to sign up again._
+
+3. **Save settings preferences:**
+_As a user, I want to save my settings preferences so that it stays as confiured with each use._
+
+
+**Acceptance Criteria:**
+
+1. The user is able to save habits information to storage.
+2. The user is able to save login infornation to storage.
+3. The user is able to settings intormation to storage.
+   
+
+**Priority:** Low
+
+**Story Points:** 4/10
 
 
