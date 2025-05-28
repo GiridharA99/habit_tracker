@@ -25,7 +25,7 @@ _As an exisitng user, I want to receive a message if I enter the wrong username 
 **Notes:**
 - The user is able to register; however, due to security constraints, the credentials are not saved in the browser cache but are removed once the user logs out. Therefore, the user is unable to log in with their own credentials. The only way to log in is with the default username and password.
 
-## 2. Homepage
+## 2. Home Screen
 
 1. **View welcome message:**
 _As a user, I want to see a personalized welcome message with my name on the homepage, so that I feel recognized and can confirm I am logged into the correct account._
@@ -149,7 +149,7 @@ _As a user, I want to see both completed and incomplete habits in my report so t
 
 **Story Points:** 5/10
 
-  ## 7. Notifications Page
+  ## 7. Notifications Screen
 
 1. **Enable/disable notifications:**
 _As a user, I want to be able to enable or disable notifications for the app, so that I can choose whether or not to receive reminders for my habits._
