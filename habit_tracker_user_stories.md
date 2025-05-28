@@ -20,7 +20,7 @@ _As an exisitng user, I want to receive a message if I enter the wrong username 
 
 **Priority:** Medium
 
-**Story Points:** 3
+**Story Points:** 5/10
 
 **Notes:**
 - The user is able to register; however, due to security constraints, the credentials are not saved in the browser cache but are removed once the user logs out. Therefore, the user is unable to log in with their own credentials. The only way to log in is with the default username and password.
@@ -45,7 +45,7 @@ _As a user, I want to see a section for completed habits on the homepage, so tha
 
 **Priority:** High
 
-**Story Points:** 8
+**Story Points:** 8/10
 
 **Notes:**
 - The user is shown completed tasks only if they were previously completed by the user.
