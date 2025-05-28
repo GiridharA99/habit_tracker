@@ -1,6 +1,6 @@
 # Habit Tracker User Story
 
-## 1. Login/Registration page
+## 1. Login/Registration Screen
 
 1. **Account registration:**
 _As a new user, I want to register with my name, username, age, and country so that I can create an account and access the habit tracking features._
