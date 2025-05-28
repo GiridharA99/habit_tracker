@@ -149,4 +149,27 @@ _As a user, I want to see both completed and incomplete habits in my report so t
 
 **Story Points:** 5/10
 
+  ## 7. Notifications Page
+
+1. **Enable/disable notifications:**
+_As a user, I want to be able to enable or disable notifications for the app, so that I can choose whether or not to receive reminders for my habits._
+
+2. **Add habits for notifications:**
+_As a user, I want to select specific habits to receive notifications for, so that I only get reminders for the habits I am actively working on._
+
+3. **Set notification times**
+_As a user, I want to have the option to receive notifications three times a day (morning, afternoon, evening) for all selected habits, so that I get timely reminders throughout the day to complete my habits._
+
+
+**Acceptance Criteria:**
+
+1. The user is able to enable and disable notifications.
+2. The user is able to add notifications to the habit of their choice.
+3. The user is able to set the time when notifications are received to morning, afternoon, evening.
+   
+
+**Priority:** Low
+
+**Story Points:** 3/10
+
 
