@@ -197,21 +197,21 @@ _As a user, I want to save my settings preferences so that it stays as confiured
 
 ## 9. Integrate External API
 
-1. **Store Habit information to External Storage:**
+1. **Store Habit information to External Storage using APIs:**
 _As a user, I want to be able to save habits to external storage so that the habit is available across multiple devices._
 
-2. **Save Login Information to External Storage:**
+2. **Save Login Information to External Storage using APIs:**
 _As a user, I want to save login information to storage so that I can login to different device with same credentials._
 
-3. **Save settings preferences to External Storage:**
+3. **Save settings preferences to External Storage using APIs:**
 _As a user, I want to save my settings preferences so that it stays as confiured across all devices I login to._
 
 
 **Acceptance Criteria:**
 
-1. The user is able to save habits information to external storage.
-2. The user is able to save login infornation to external storage.
-3. The user is able to settings intormation to external storage.
+1. The user is able to save habits information to external storage using API.
+2. The user is able to save login infornation to external storage using API.
+3. The user is able to settings intormation to external storage using API.
    
 
 **Priority:** Low
