@@ -157,7 +157,7 @@ _As a user, I want to be able to enable or disable notifications for the app, so
 2. **Add habits for notifications:**
 _As a user, I want to select specific habits to receive notifications for, so that I only get reminders for the habits I am actively working on._
 
-3. **Set notification times**
+3. **Set notification times:**
 _As a user, I want to have the option to receive notifications three times a day (morning, afternoon, evening) for all selected habits, so that I get timely reminders throughout the day to complete my habits._
 
 
