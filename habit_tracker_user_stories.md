@@ -50,7 +50,7 @@ _As a user, I want to see a section for completed habits on the homepage, so tha
 **Notes:**
 - The user is shown completed tasks only if they were previously completed by the user.
 
-## 3. Menu
+## 3. Settings Menu
 
 1. **Access menu options:**
 _As a user, I want to access a menu with options for configuring my habits, viewing reports, editing my profile, and signing out, so that I can easily navigate to different parts of the app._
