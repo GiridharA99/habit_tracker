@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'add_habit_screen.dart';
 
@@ -19,10 +22,24 @@ class _HabitTrackerScreenState extends State<HabitTrackerScreen> {
   @override
   void initState() {
     super.initState();
+    _loadUserData();
+  }
+
+  Future<void> _loadUserData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      name = prefs.getString('name') ?? widget.username;
+      selectedHabitsMap = Map<String, String>.from(
+          jsonDecode(prefs.getString('selectedHabitsMap') ?? '{}'));
+      completedHabitsMap = Map<String, String>.from(
+          jsonDecode(prefs.getString('completedHabitsMap') ?? '{}'));
+    });
   }
 
   Future<void> _saveHabits() async {
-    //save habits to preferences in the future
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('selectedHabitsMap', jsonEncode(selectedHabitsMap));
+    await prefs.setString('completedHabitsMap', jsonEncode(completedHabitsMap));
   }
 
   Color _getColorFromHex(String hexColor) {
@@ -186,13 +203,15 @@ class _HabitTrackerScreenState extends State<HabitTrackerScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AddHabitScreen(),
+                    builder: (context) => const AddHabitScreen(),
                   ),
-                );
+                ).then((_) {
+                  _loadUserData(); // Reload data after returning
+                });
               },
-              child: Icon(Icons.add),
               backgroundColor: Colors.blue.shade700,
               tooltip: 'Add Habits',
+              child: const Icon(Icons.add),
             )
           : null,
     );
@@ -203,7 +222,7 @@ class _HabitTrackerScreenState extends State<HabitTrackerScreen> {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       color: color,
-      child: Container(
+      child: SizedBox(
         height: 60, // Adjust the height for thicker cards.
         child: ListTile(
           title: Text(
