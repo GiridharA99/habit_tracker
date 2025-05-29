@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 import 'habit_tracker_screen.dart';
 import 'register_screen.dart';
@@ -20,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _login() {
     // The login logic goes here
-    print("login logic here");
+    // print("login logic here");
 
     final username = _usernameController.text;
     final password = _passwordController.text;
@@ -32,7 +33,20 @@ class _LoginScreenState extends State<LoginScreen> {
           builder: (context) => HabitTrackerScreen(username: username),
         ),
       );
+    } else {
+      _showToast('The username or password was incorrect');
     }
+  }
+
+  void _showToast(String message) {
+    Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.red,
+      textColor: Colors.white,
+      fontSize: 16.0,
+    );
   }
 
   @override

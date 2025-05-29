@@ -40,10 +40,7 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
         'Drink Water': '3380FF',
         'Practice Gratitude': 'FFC300'
       };
-      completedHabitsMap = {
-        'Wake Up Early': 'FF5733',
-        'Journal': 'DAF7A6'
-      };
+      completedHabitsMap = {'Wake Up Early': 'FF5733', 'Journal': 'DAF7A6'};
     });
   }
 
@@ -54,12 +51,15 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
   @override
   Widget build(BuildContext context) {
     // Combine both maps for display, ensuring no duplicates
-    Map<String, String> allHabitsMap = {...selectedHabitsMap, ...completedHabitsMap};
+    Map<String, String> allHabitsMap = {
+      ...selectedHabitsMap,
+      ...completedHabitsMap
+    };
 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue.shade700,
-        title: Text('Configure Habits'),
+        title: const Text('Configure Habits'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -101,7 +101,8 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
                       ),
                       child: Text(
                         colorName,
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                        style: const TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                       ),
                     ),
                   );
@@ -128,16 +129,17 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
                   });
                 }
               },
-              child: Text(
-                'Add Habit',
-                style: TextStyle(color: Colors.white, fontSize: 16),
-              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue.shade700,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text(
+                'Add Habit',
+                style: TextStyle(color: Colors.white, fontSize: 16),
               ),
             ),
             const SizedBox(height: 20),
@@ -152,7 +154,7 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
                     ),
                     title: Text(habitName),
                     trailing: IconButton(
-                      icon: Icon(Icons.delete, color: Colors.red),
+                      icon: const Icon(Icons.delete, color: Colors.red),
                       onPressed: () {
                         setState(() {
                           // Remove habit from both maps if it exists
